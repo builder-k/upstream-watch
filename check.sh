@@ -25,7 +25,7 @@ for slug in $(jq -r 'keys[] | select(startswith("_") | not)' versions.json); do
   fi
   url=$(jq -r '.html_url' <<<"$latest_json")
   date=$(jq -r '.published_at[0:10]' <<<"$latest_json")
-  notes=$(jq -r '.body // ""' <<<"$latest_json" | head -c 2500)
+  notes=$(jq -r '.body // ""' <<<"$latest_json"); notes=${notes:0:2500}   # no pipe: head would break jq under pipefail
   echo "$slug: NEW $latest (ours $current)"
   gh issue create -R "$repo" --label upstream-update \
     --title "원본 새 버전: ${upstream#*/} $latest → $name (현재 $current)" \
