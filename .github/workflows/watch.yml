@@ -1,0 +1,31 @@
+# Daily (09:00 KST) check of the ArtCraft upstreams behind the Commerce24 *24 tools. A newer upstream
+# release opens an issue here (label upstream-update) and bumps versions.json so it is reported once.
+name: Upstream watch
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare pinned versions with the upstreams' latest releases
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash check.sh
+      - name: Record the reported versions
+        if: steps.check.outputs.changed == '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions.json
+          git commit -m "watch: record newly reported upstream versions"
+          git push
