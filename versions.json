@@ -23,7 +23,7 @@
   "vector24": {
     "name": "Vector24",
     "upstream": "storytold/vectorcraft",
-    "current": "v0.11.0"
+    "current": "v0.12.0"
   },
   "write24": {
     "name": "Write24",
