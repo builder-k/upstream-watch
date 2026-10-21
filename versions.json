@@ -3,12 +3,12 @@
   "pixel24": {
     "name": "Pixel24",
     "upstream": "storytold/photocraft",
-    "current": "v0.10.0"
+    "current": "v0.11.1"
   },
   "screen24": {
     "name": "Screen24",
     "upstream": "storytold/figcraft",
-    "current": "v0.7.0"
+    "current": "v0.8.0"
   },
   "paper24": {
     "name": "Paper24",
@@ -43,6 +43,6 @@
   "sheet24": {
     "name": "Sheet24",
     "upstream": "storytold/gridcraft",
-    "current": "v0.8.0"
+    "current": "v0.9.0"
   }
 }
