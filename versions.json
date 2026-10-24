@@ -3,7 +3,7 @@
   "pixel24": {
     "name": "Pixel24",
     "upstream": "storytold/photocraft",
-    "current": "v0.14.0"
+    "current": "v0.15.1"
   },
   "screen24": {
     "name": "Screen24",
