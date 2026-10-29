@@ -3,46 +3,46 @@
   "pixel24": {
     "name": "Pixel24",
     "upstream": "storytold/photocraft",
-    "current": "v0.16.0"
+    "current": "v0.17.0"
   },
   "screen24": {
     "name": "Screen24",
     "upstream": "storytold/figcraft",
-    "current": "v0.11.2"
+    "current": "v0.12.1"
   },
   "paper24": {
     "name": "Paper24",
     "upstream": "storytold/pdfcraft",
-    "current": "v0.14.0"
+    "current": "v0.15.0"
   },
   "reel24": {
     "name": "Reel24",
     "upstream": "storytold/filmcraft",
-    "current": "v0.13.0"
+    "current": "v0.14.0"
   },
   "vector24": {
     "name": "Vector24",
     "upstream": "storytold/vectorcraft",
-    "current": "v0.17.0"
+    "current": "v0.18.0"
   },
   "write24": {
     "name": "Write24",
     "upstream": "storytold/wordcraft",
-    "current": "v0.11.0"
+    "current": "v0.12.0"
   },
   "slide24": {
     "name": "Slide24",
     "upstream": "storytold/deckcraft",
-    "current": "v0.11.1"
+    "current": "v0.12.0"
   },
   "cad24": {
     "name": "CAD24",
     "upstream": "storytold/cadcraft",
-    "current": "v0.13.0"
+    "current": "v0.14.0"
   },
   "sheet24": {
     "name": "Sheet24",
     "upstream": "storytold/gridcraft",
-    "current": "v0.12.1"
+    "current": "v0.13.0"
   }
 }
