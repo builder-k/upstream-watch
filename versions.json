@@ -13,7 +13,7 @@
   "paper24": {
     "name": "Paper24",
     "upstream": "storytold/pdfcraft",
-    "current": "v0.21.1"
+    "current": "v0.22.0"
   },
   "reel24": {
     "name": "Reel24",
