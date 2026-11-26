@@ -28,12 +28,12 @@
   "write24": {
     "name": "Write24",
     "upstream": "storytold/wordcraft",
-    "current": "v0.18.1"
+    "current": "v0.19.1"
   },
   "slide24": {
     "name": "Slide24",
     "upstream": "storytold/deckcraft",
-    "current": "v0.18.1"
+    "current": "v0.19.1"
   },
   "cad24": {
     "name": "CAD24",
